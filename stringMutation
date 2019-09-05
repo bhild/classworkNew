@@ -1,0 +1,31 @@
+//****************************************************
+//StringMutation.java   Author: Lewis/Loftus
+//Demonstates use of the String class and its methods
+//****************************************************
+public class stringMutation
+{
+    public static void main(String args[])
+    {
+        //----------------------------------------------------------------
+        //    Prints a string and mutations of it
+        //----------------------------------------------------------------
+        String phrase1 = new String ("Change is inevtable");
+        String mutation1,mutation2,mutation3,mutation4;
+
+        System.out.println("Orignal String \""+phrase1+"\"");
+        System.out.println("Length of Orignal String: " + phrase1.length());
+
+        mutation1 = phrase1.concat(", exept for vending machines.");
+        mutation2 = mutation1.toUpperCase();
+        mutation3 = mutation2.replace('E','X');
+        mutation4 = mutation3.substring(3,30);
+
+        //print each outated string
+        System.out.println("Mutation #1: "+mutation1);
+        System.out.println("Mutation #2: "+mutation2);
+        System.out.println("Mutation #3: "+mutation3);
+        System.out.println("Mutation #4: "+mutation4);
+
+        System.out.println("Mutated Length: "+mutation1.length());
+    }
+}
